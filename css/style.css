@@ -1,0 +1,97 @@
+/* Fonts */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #0E2A3A;
+    background-color: #F1F3F5;
+    margin: 0;
+}
+
+/* Titles */
+.title, .section-title {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover {
+    color: #4CB8A6;
+}
+
+/* Logo */
+.logo {
+    width: 200px;
+}
+
+/* Hero */
+.hero {
+    height: 450px;
+    background: linear-gradient(rgba(14,42,58,0.7), rgba(14,42,58,0.7));/*, url('assets/hero-bg.jpg') center/cover no-repeat*/
+}
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Botón de acento */
+.btn-accent {
+    background-color: #4CB8A6;
+    border: none;
+    color: #fff;
+}
+.btn-accent:hover {
+    background-color: #3aa091;
+}
+
+/* Botón outline acento */
+.btn-outline-accent {
+    border: 2px solid #4CB8A6;
+    color: #4CB8A6;
+}
+.btn-outline-accent:hover {
+    background-color: #4CB8A6;
+    color: #fff;
+}
+
+/* Slider de servicios */
+.service-slider {
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 15px;
+}
+.service-card {
+    min-width: 300px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: grab;
+}
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.service-card img {
+    height: 180px;
+    object-fit: cover;
+}
+.price {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer-logo {
+    width: 50px;
+}
+
+/* Scrollbar invisible para slider */
+.service-slider::-webkit-scrollbar {
+    display: none;
+}
