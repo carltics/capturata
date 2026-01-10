@@ -49,17 +49,40 @@
 <!-- Hero Section -->
 <section class="hero d-flex align-items-center justify-content-center text-center text-white">
     <div class="hero-content">
-        <h1 class="title">Capturamos la esencia de tu marca</h1>
-        <p class="subtitle">Servicios de comunicación y marketing digital personalizados</p>
-        <a href="#services" class="btn btn-accent btn-lg mt-3">Conoce nuestros servicios</a>
+    <h1 class="title">Capturamos la esencia de tu marca</h1>
+    <p class="subtitle">Servicios de comunicación y marketing digital personalizados</p>
+
+    <!-- Pasos del proceso -->
+    <div class="row justify-content-center mt-4 g-4">
+        <div class="col-md-3">
+            <div class="text-center">
+                <i class="fas fa-calendar-check fa-2x mb-2"></i>
+                <p class="mb-0"><strong>1.</strong> Reserva nuestro tiempo contratando el servicio</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="text-center">
+                <i class="fas fa-file-alt fa-2x mb-2"></i>
+                <p class="mb-0"><strong>2.</strong> Rellena el formulario para conocer tus necesidades</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="text-center">
+                <i class="fas fa-clock fa-2x mb-2"></i>
+                <p class="mb-0"><strong>3.</strong> En 7–10 días recibirás el informe</p>
+            </div>
+        </div>
     </div>
+
+    <a href="#services" class="btn btn-accent btn-lg mt-4">Conoce nuestros servicios</a>
+</div>
+
 </section>
 
 <!-- Servicios Section -->
 <section id="services" class="container my-5">
     <h2 class="text-center mb-5 section-title">Nuestros Servicios</h2>
-	<p>Los precios de nuestros servicios aparecen sin IVA</p>
-	<p>Tras la realización del pago, se debe rellenar un formulario, acto seguido empezamos con el encargo</p>
+	<p>* Los precios de nuestros servicios aparecen sin IVA</p>
     <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
@@ -82,9 +105,16 @@
                         <div class="card service-card">
                             <img src="https://cdn.prod.website-files.com/674efb3ac8a86dd14d2bf27a/69304da21c8fcd8624678189_pexels-photo-6476256.jpeg" class="card-img-top" alt="Guía de Tono y Comunicación de Marca">
                             <div class="card-body">
-                                <h5 class="card-title">Guía de Tono y Comunicación de Marca</h5>
+                                <h5 class="card-title d-flex justify-content-between align-items-center">
+								  Guía de Tono y Comunicación de Marca
+								  
+								</h5>
+
                                 <p class="card-text">Define cómo comunicar tu marca con coherencia y estilo propio.</p>
-                                <p class="price">160 €</p>
+                                <p class="price text-center">160 €* <i class="fas fa-circle-info text-muted"
+									 role="button"
+									 data-bs-toggle="modal"
+									 data-bs-target="#modalGuiaTono"></i></p>
                                 <a href="https://buy.stripe.com/dRm7sE7yq89V9OvdEZgfu02" class="btn btn-accent w-100">Contratar</a>
                             </div>
                         </div>
@@ -94,9 +124,16 @@
                         <div class="card service-card">
                             <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe?crop=entropy&cs=tinysrgb&fit=max&w=600" class="card-img-top" alt="Plan de Publicaciones Mensual (12)">
                             <div class="card-body">
-                                <h5 class="card-title">Plan de Publicaciones Mensual (12)</h5>
+								<h5 class="card-title d-flex justify-content-between align-items-center">
+								  Plan de Publicaciones Mensual (12)
+								  
+								</h5>
+
                                 <p class="card-text">12 publicaciones estratégicas al mes para redes sociales.</p>
-                                <p class="price">250 €</p>
+                                <p class="price text-center">250 €* <i class="fas fa-circle-info text-muted"
+									 role="button"
+									 data-bs-toggle="modal"
+									 data-bs-target="#modalPlan12"></i></p>
                                 <a href="https://buy.stripe.com/fZubIUg4W61Nd0HeJ3gfu04" class="btn btn-accent w-100">Contratar</a>
                             </div>
                         </div>
@@ -111,9 +148,15 @@
                         <div class="card service-card">
                             <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&w=600" class="card-img-top" alt="Plan de Publicaciones Mensual (8)">
                             <div class="card-body">
-                                <h5 class="card-title">Plan de Publicaciones Mensual (8)</h5>
+								<h5 class="card-title d-flex justify-content-between align-items-center">
+								  Plan de Publicaciones Mensual (8)
+								  
+								</h5>
                                 <p class="card-text">8 publicaciones mensuales adaptadas a tu audiencia.</p>
-                                <p class="price">180 €</p>
+                                <p class="price text-center">180 €* <i class="fas fa-circle-info text-muted"
+									 role="button"
+									 data-bs-toggle="modal"
+									 data-bs-target="#modalPlan8"></i></p>
                                 <a href="https://buy.stripe.com/8x228kaKC3TF3q7gRbgfu01" class="btn btn-accent w-100">Contratar</a>
                             </div>
                         </div>
@@ -123,9 +166,15 @@
                         <div class="card service-card">
                             <img src="https://destinationmarketingpodcast.com/wp-content/uploads/2023/07/pexels-visual-tag-mx-2566573-scaled.jpg" class="card-img-top" alt="Estrategia de Contenidos">
                             <div class="card-body">
-                                <h5 class="card-title">Estrategia de Contenidos</h5>
-                                <p class="card-text">Plan integral de contenidos para tu marca.</p>
-                                <p class="price">230 €</p>
+								<h5 class="card-title d-flex justify-content-between align-items-center">
+								  Estrategia de Contenidos
+								  
+								</h5>
+                                <p class="card-text">Plan integral de contenidos para tu marca. </p>
+                                <p class="price text-center">230 €* <i class="fas fa-circle-info text-muted"
+									 role="button"
+									 data-bs-toggle="modal"
+									 data-bs-target="#modalEstrategia"></i></p>
                                 <a href="https://buy.stripe.com/dRmdR2bOGcqb9Ov9oJgfu03" class="btn btn-accent w-100">Contratar</a>
                             </div>
                         </div>
@@ -135,9 +184,15 @@
                         <div class="card service-card">
                             <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Auditoría de Presencia Digital">
                             <div class="card-body">
-                                <h5 class="card-title">Auditoría de Presencia Digital</h5>
+                                <h5 class="card-title d-flex justify-content-between align-items-center">
+								  Auditoría de Presencia Digital
+								  
+								</h5>
                                 <p class="card-text">Evaluación de tu presencia online y recomendaciones de mejora.</p>
-                                <p class="price">150 €</p>
+                                <p class="price text-center">150 €* <i class="fas fa-circle-info text-muted"
+									 role="button"
+									 data-bs-toggle="modal"
+									 data-bs-target="#modalAuditoria"></i></p>
                                 <a href="https://buy.stripe.com/3cI9AM5qi75R3q7bwRgfu00" class="btn btn-accent w-100">Contratar</a>
                             </div>
                         </div>
@@ -166,15 +221,141 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-4">
-    <img src="assets/logo.png" alt="Capturata Logo" class="footer-logo mb-2">
-    <p>&copy; 2026 Capturata. Todos los derechos reservados.</p>
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <div class="d-flex justify-content-center gap-4 mb-2">
+            <a href="aviso-legal.html" class="text-white text-decoration-none">Aviso Legal</a>
+            <a href="politica-privacidad.html" class="text-white text-decoration-none">Política de Privacidad</a>
+            <a href="politica-cookies.html" class="text-white text-decoration-none">Política de Cookies</a>
+        </div>
+        <p class="mb-0">&copy; 2026 Capturata. Todos los derechos reservados.</p>
+    </div>
 </footer>
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
+<div class="modal fade" id="modalGuiaTono" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Guía de Tono y Comunicación de Marca</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>¿En qué consiste?</strong><br>
+        Definimos cómo comunica tu marca para que sea coherente, reconocible y alineada con tus valores.</p>
+
+        <p><strong>Proceso</strong></p>
+        <ul>
+          <li>Análisis de la marca y su contexto</li>
+          <li>Definición de tono, estilo y personalidad</li>
+          <li>Redacción de pautas claras de comunicación</li>
+        </ul>
+
+        <p><strong>Qué recibirás</strong><br>
+        Un documento práctico que sirve como referencia para cualquier contenido futuro.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalPlan12" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Plan de Publicaciones Mensual (12)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>¿En qué consiste?</strong><br>
+        Planificación estratégica de 12 contenidos mensuales adaptados a tus redes sociales.</p>
+
+        <p><strong>Proceso</strong></p>
+        <ul>
+          <li>Análisis de marca y objetivos</li>
+          <li>Definición de temas y formatos</li>
+          <li>Entrega de calendario y copies orientativos</li>
+        </ul>
+
+        <p><strong>Qué recibirás</strong><br>
+        Un plan organizado para publicar con coherencia y constancia.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalPlan8" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Plan de Publicaciones Mensual (8)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>¿En qué consiste?</strong><br>
+        Plan mensual reducido para marcas que buscan mantener presencia sin alta frecuencia.</p>
+
+        <p><strong>Proceso</strong></p>
+        <ul>
+          <li>Revisión de marca y canales</li>
+          <li>Selección de contenidos prioritarios</li>
+          <li>Entrega del plan mensual</li>
+        </ul>
+
+        <p><strong>Qué recibirás</strong><br>
+        Un calendario sencillo y fácil de ejecutar.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalEstrategia" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Estrategia de Contenidos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>¿En qué consiste?</strong><br>
+        Diseño de una estrategia global para comunicar de forma coherente y alineada con objetivos.</p>
+
+        <p><strong>Proceso</strong></p>
+        <ul>
+          <li>Análisis de marca y público</li>
+          <li>Definición de objetivos y mensajes clave</li>
+          <li>Propuesta estratégica de contenidos</li>
+        </ul>
+
+        <p><strong>Qué recibirás</strong><br>
+        Un marco estratégico para orientar toda tu comunicación.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalAuditoria" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Auditoría de Presencia Digital</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>¿En qué consiste?</strong><br>
+        Evaluación del estado actual de tu presencia online.</p>
+
+        <p><strong>Proceso</strong></p>
+        <ul>
+          <li>Revisión de perfiles y comunicación</li>
+          <li>Detección de puntos fuertes y áreas de mejora</li>
+          <li>Recomendaciones estratégicas</li>
+        </ul>
+
+        <p><strong>Qué recibirás</strong><br>
+        Un diagnóstico claro con acciones de mejora.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

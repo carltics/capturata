@@ -90,8 +90,11 @@ body {
 .footer-logo {
     width: 50px;
 }
-
+.carousel-control-prev, .carousel-control-next{
+	width:20px !important;
+}
 /* Scrollbar invisible para slider */
 .service-slider::-webkit-scrollbar {
     display: none;
 }
+
